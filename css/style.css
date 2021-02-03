@@ -1,5 +1,5 @@
 /* Debug */
-[class*=col-] {
+/* [class*=col-] {
   border: 1px solid blue;
 }
 .container-fluid {
@@ -7,7 +7,7 @@
 }
 .container {
   border: 1px solid black;
-}
+} */
 
 /* COMMON */
 * {
@@ -122,6 +122,9 @@ main section:nth-child(2) .container-fluid {
   background-color: #1ABC9C;
   margin: 2vh auto;
   padding: 25px 0;
+}
+main section:nth-child(2) p {
+  margin: 3vh auto;
 }
 main section:nth-child(2) button {
   margin: 2vh 0;
