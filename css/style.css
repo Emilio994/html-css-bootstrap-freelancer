@@ -92,7 +92,7 @@ header .jumbotron.jumbotron-fluid i {
 /* SECTION 1 */
 main section:first-child .container:last-child .square {
   height: 200px;
-  width: 90%;
+  width: 100%;
   margin: 2% auto;
   border: 1px solid black;
   border-radius: 10px;
@@ -124,7 +124,7 @@ main section:nth-child(2) .container-fluid {
   padding: 25px 0;
 }
 main section:nth-child(2) p {
-  margin: 3vh auto;
+  margin: 3vh  ;
 }
 main section:nth-child(2) button {
   margin: 2vh 0;
@@ -169,8 +169,12 @@ footer section:nth-child(2) {
 
 /* INIZIO MQ */
 /* TABLET MQ (col-sm-n) */
-@media (min-width: min-with:768px) and (max-width:992px) {
-
+@media (min-width:768px) and (max-width:992px) {
+  /* MAIN */
+  /* SECTION 1 */
+  main section:first-child .container:last-child .square {
+    height: 250px;
+  }
 }
 
 /* SMARTPHONE MQ (col-xs-n) */
@@ -186,5 +190,10 @@ footer section:nth-child(2) {
   }
   header .navigator ul {
     display: none;
+  }
+  /* MAIN */
+  /* SECTION 1 */
+  main section:first-child .container:last-child .square {
+    height: 400px;
   }
 }
