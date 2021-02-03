@@ -18,7 +18,7 @@
 body {
   color: white;
 }
-[class*=col-] {
+section {
   text-align: center;
 }
 main section:nth-child(odd) {
@@ -51,6 +51,9 @@ ul li a:hover {
 }
 h1, h2, h3, {
   font-weight: bolder;
+}
+.text_left {
+  text-align: left;
 }
 
 /* HEADER */
@@ -108,15 +111,27 @@ main section:first-child .container:last-child .square {
 }
 
 /* SECTION 2 */
-main section .container-fluid {
+main section:nth-child(2) .container-fluid {
   background-color: #1ABC9C;
+  margin: 2vh auto;
+  padding: 25px 0;
+}
+main section:nth-child(2) button {
+  margin: 2vh 0;
 }
 /* SECTION 3 */
 
-
 /* FOOTER */
-footer .container-fluid {
+/* SECTION 1 */
+footer section:first-child {
   background-color: #3A546D;
+}
+footer .container-fluid:first-child span {
+  color: #1BB699;
+}
+/* SECTION 2 */
+footer section:nth-child(2) {
+  background-color: #2C3E50;
 }
 
 
