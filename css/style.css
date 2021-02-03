@@ -28,7 +28,7 @@ main section:nth-child(odd) {
   display: none;
 }
 button {
-  padding: 5px;
+  padding: 10px;
   background-color: #1ABC9C;
   color: white;
   border: 1px solid white;
@@ -123,6 +123,13 @@ main section:nth-child(2) button {
   margin: 2vh 0;
 }
 /* SECTION 3 */
+main section:nth-child(3) {
+  padding: 25px;
+}
+main section:nth-child(3) .container .lifter {
+  min-height: 100px;
+  display: inline-block;
+}
 
 /* FOOTER */
 /* SECTION 1 */
