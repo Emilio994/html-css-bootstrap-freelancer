@@ -15,6 +15,56 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  color: white;
+}
+main section:nth-child(odd) {
+  color: black;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  color: white;
+}
+ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+.display_none {
+  display: none;
+}
+
+/* HEADER */
+/* Navigator */
+header .container-fluid {
+  background-color: #2C3E50;
+}
+/* Jumbotron */
+header .jumbotron.jumbotron-fluid {
+  background-color: #1ABC9C;
+}
+header .jumbotron.jumbotron-fluid .container .row img {
+
+}
+
+/* MAIN */
+/* SECTION 1 */
+
+/* SECTION 2 */
+main section .container-fluid {
+  background-color: #1ABC9C;
+}
+/* SECTION 3 */
+
+
+/* FOOTER */
+footer .container-fluid {
+  background-color: #3A546D;
+}
 
 
 /* INIZIO MQ */
