@@ -1,7 +1,6 @@
 /* Debug */
 [class*=col-] {
   border: 1px solid blue;
-  text-align: center;
 }
 .container-fluid {
   border: 1px solid red;
@@ -9,6 +8,7 @@
 .container {
   border: 1px solid black;
 }
+
 /* COMMON */
 * {
   padding: 0;
@@ -18,9 +18,17 @@
 body {
   color: white;
 }
+[class*=col-] {
+  text-align: center;
+}
 main section:nth-child(odd) {
   color: black;
 }
+.display_none {
+  display: none;
+}
+
+/* UTILITIES */
 ul {
   list-style: none;
 }
@@ -34,8 +42,8 @@ ul li a:hover {
   color: white;
   text-decoration: none;
 }
-.display_none {
-  display: none;
+h1, h2, h3, h4 {
+  font-weight: bolder;
 }
 
 /* HEADER */
@@ -43,16 +51,50 @@ ul li a:hover {
 header .container-fluid {
   background-color: #2C3E50;
 }
+header .container-fluid [class*="col-"] {
+  height: 80px;
+  line-height: 80px;
+}
+header .container-fluid [class*="col-"] h4 {
+  line-height: 80px;
+  margin: 0;
+  font-weight: bolder;
+}
+header .container-fluid [class*="col"] ul li {
+  padding: 0 3%;
+}
 /* Jumbotron */
 header .jumbotron.jumbotron-fluid {
   background-color: #1ABC9C;
 }
-header .jumbotron.jumbotron-fluid .container .row img {
-
-}
 
 /* MAIN */
 /* SECTION 1 */
+main section:first-child .container:last-child .square {
+  height: 200px;
+  width: 90%;
+  margin: 2% auto;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.square#red {
+  background-color: #BA4B63;
+}
+.square#lightblue {
+  background-color: #1EA4B6;
+}
+.square#black {
+  background-color: black;
+}
+.square#darkblue {
+  background-color: #1C83C1;
+}
+.square#blue {
+  background-color: #0E38B5;
+}
+.square#brown {
+  background-color: #CCB2A3;
+}
 
 /* SECTION 2 */
 main section .container-fluid {
