@@ -84,6 +84,9 @@ header .container-fluid [class*="col"] ul li {
 header .jumbotron.jumbotron-fluid {
   background-color: #1ABC9C;
 }
+header .jumbotron.jumbotron-fluid i {
+  margin-bottom: 2vh;
+}
 
 /* MAIN */
 /* SECTION 1 */
@@ -93,6 +96,7 @@ main section:first-child .container:last-child .square {
   margin: 2% auto;
   border: 1px solid black;
   border-radius: 10px;
+  margin-top: 2vh;
 }
 .square#red {
   background-color: #BA4B63;
@@ -125,6 +129,9 @@ main section:nth-child(2) button {
 /* SECTION 3 */
 main section:nth-child(3) {
   padding: 25px;
+}
+main section:nth-child(3) i {
+  margin-bottom: 2vh;
 }
 main section:nth-child(3) .container .lifter {
   min-height: 100px;
@@ -159,11 +166,22 @@ footer section:nth-child(2) {
 
 /* INIZIO MQ */
 /* TABLET MQ (col-sm-n) */
-@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+@media (min-width: min-with:768px) and (max-width:992px) {
 
 }
 
 /* SMARTPHONE MQ (col-xs-n) */
-@media (max-width: @screen-xs-max) {
+@media (max-width:768px)  {
 
+  /* HEADER */
+  /* Navigator */
+  header .navigator i {
+    display: block;
+    line-height: 80px;
+    text-align: right;
+    font-size: 2em;
+  }
+  header .navigator ul {
+    display: none;
+  }
 }
