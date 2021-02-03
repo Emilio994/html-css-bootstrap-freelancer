@@ -1,5 +1,5 @@
 /* Debug */
-/* [class*=col-] {
+[class*=col-] {
   border: 1px solid blue;
 }
 .container-fluid {
@@ -7,7 +7,7 @@
 }
 .container {
   border: 1px solid black;
-} */
+}
 
 /* COMMON */
 * {
@@ -151,10 +151,10 @@ footer .container-fluid:first-child span {
 }
 footer .socials div {
   text-align: center;
-  height: 40px;
-  width: 40px;
+  height: 45px;
+  width: 45px;
   border: 1px solid white;
-  line-height: 40px;
+  line-height: 45px;
   border-radius: 50%;
   margin: 0 4px;
 }
