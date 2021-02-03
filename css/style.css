@@ -18,7 +18,7 @@
 body {
   color: white;
 }
-section {
+[class*=col-] {
   text-align: center;
 }
 main section:nth-child(odd) {
@@ -33,6 +33,9 @@ button {
   color: white;
   border: 1px solid white;
   border-radius: 5px;
+}
+i {
+  font-size: 1.3em;
 }
 
 /* UTILITIES */
@@ -128,6 +131,18 @@ footer section:first-child {
 }
 footer .container-fluid:first-child span {
   color: #1BB699;
+}
+footer .socials div {
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+footer .socials i { /* Facilita il click sulle icone */
+  padding: 5px;
 }
 /* SECTION 2 */
 footer section:nth-child(2) {
