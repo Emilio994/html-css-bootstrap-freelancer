@@ -15,3 +15,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
+/* INIZIO MQ */
+/* TABLET MQ (col-sm-n) */
+@media screen and (min-width:768px) and (max-width:992px) {
+
+}
