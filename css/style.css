@@ -86,16 +86,29 @@ header .ms_navigator [class*="col"] ul li {
   padding: 0 1%;
   font-size: 1.1em;
 }
+header .ms_navigator button {
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+}
+header .ms_navigator button h5 {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+header .ms_navigator button i {
+  vertical-align: middle;
+  font-size: 1.2em;
+}
 /* Jumbotron */
 header .ms_jumbotron {
   margin-top: 80px;
   background-color: #1ABC9C;
   line-height: 8vh;
-  height: 600px;
+  height: 700px;
 }
 header .ms_jumbotron .row {
-  margin: auto;
-  vertical-align: middle;
+  margin: 5vh 0;
 }
 header .ms_jumbotron h2 {
   font-size: 5em;
@@ -201,6 +214,50 @@ footer section:nth-child(2) {
 /* TABLET MQ (col-sm-n) */
 @media (min-width:768px) and (max-width:992px) {
 
+  /* COMMON */
+  body {
+    font-size: 0.8em;
+  }
+  .ms_container {
+    width: 100%;
+  }
+
+  /* HEADER */
+  /* Navigator */
+  header .ms_navigator button h5 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+  header .ms_navigator button i {
+    vertical-align: middle;
+  }
+  /* Jumbotron */
+  header .ms_jumbotron {
+    height: 450px;
+  }
+
+  /* MAIN */
+  /* Section 1 */
+
+  /* Section2 */
+  main section:nth-child(2) {
+    height: 420px;
+  }
+
+  /* Section 3 */
+  main section:nth-child(3) {
+    height: 480px;
+    padding: 0;
+  }
+
+  /* FOOTER */
+  /* Section 1 */
+  footer section:first-child {
+    padding: 6vh 0;
+    height: 150px;
+    font-size: 1.5em;
+  }
 }
 
 /* SMARTPHONE MQ (col-md-n) */
