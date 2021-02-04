@@ -22,8 +22,12 @@ body {
 main section:nth-child(odd) {
   color: black;
 }
-.wrapper {
+.ms_footer_section {
   width: 100%;
+}
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
 }
 button {
   padding: 10px;
@@ -89,10 +93,9 @@ header .ms_jumbotron i {
 main section:first-child .container:last-child .square {
   height: 300px;
   width: 60%;
-  margin: 2% auto;
+  margin: 5% auto;
   border: 1px solid black;
   border-radius: 10px;
-  margin-top: 2vh;
 }
 
 .square#red {
@@ -115,7 +118,7 @@ main section:first-child .container:last-child .square {
 }
 
 /* SECTION 2 */
-main section:nth-child(2) .wrapper {
+main section:nth-child(2) {
   background-color: #1ABC9C;
   margin: 2vh auto;
   padding: 25px 0;
@@ -128,7 +131,7 @@ main section:nth-child(2) button {
 }
 /* SECTION 3 */
 main section:nth-child(3) {
-  padding: 25px;
+  margin-bottom: 3vh;
 }
 main section:nth-child(3) i {
   margin-bottom: 2vh;
@@ -142,6 +145,7 @@ main section:nth-child(3) .container .lifter {
 /* SECTION 1 */
 footer section:first-child {
   background-color: #3A546D;
+  padding: 2vh 0;
 }
 footer .wrapper:first-child span {
   color: #1BB699;
