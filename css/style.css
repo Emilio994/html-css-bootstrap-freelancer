@@ -80,7 +80,7 @@ header .ms_navigator {
 header .ms_navigator [class*="col-"] h4 {
   line-height: 80px;
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 header .ms_navigator [class*="col"] ul li {
   padding: 0 1%;
@@ -105,7 +105,6 @@ header .ms_jumbotron {
   margin-top: 80px;
   background-color: #1ABC9C;
   line-height: 8vh;
-  height: 700px;
 }
 header .ms_jumbotron .row {
   margin: 5vh 0;
@@ -118,7 +117,7 @@ header .ms_jumbotron ul {
 }
 header .ms_jumbotron img {
   height: auto;
-  max-width: 22.5%;
+  width: 250px;
 }
 header .ms_jumbotron i {
   margin-bottom: 2vh;
@@ -141,7 +140,6 @@ main section:nth-child(2) {
   background-color: #1ABC9C;
   margin: 2vh auto;
   padding: 8vh 0;
-  height: 700px;
 }
 main section:nth-child(2) p {
   margin: 3vh;
@@ -185,12 +183,14 @@ main section:nth-child(3) .container-fluid .lifter {
 footer section:first-child {
   background-color: #2c3e50;
   padding: 7vh 0;
-  height: 200px;
 }
-footer .wrapper:first-child span {
+footer section:first-child  span {
   color: #1BB699;
 }
-footer .socials div {
+footer section:first-child .row > div {
+  margin: 2vh 0;;
+}
+footer section:first-child .socials div {
   text-align: center;
   height: 40px;
   width: 40px;
@@ -199,7 +199,7 @@ footer .socials div {
   border-radius: 50%;
   margin: 0 4px;
 }
-footer  i { /* Facilita il click sulle icone */
+footer   i { /* Facilita il click sulle icone */
   padding: 5px;
   font-size: 1.1em;
 }
@@ -233,34 +233,25 @@ footer section:nth-child(2) {
     vertical-align: middle;
   }
   /* Jumbotron */
-  header .ms_jumbotron {
-    height: 450px;
-  }
+
 
   /* MAIN */
   /* Section 1 */
 
   /* Section2 */
-  main section:nth-child(2) {
-    height: 420px;
-  }
+
 
   /* Section 3 */
-  main section:nth-child(3) {
-    height: 480px;
-    padding: 0;
-  }
+
 
   /* FOOTER */
   /* Section 1 */
-  footer section:first-child {
-    padding: 6vh 0;
-    height: 150px;
-    font-size: 1.5em;
-  }
+
 }
 
 /* SMARTPHONE MQ (col-md-n) */
 @media (min-width:992px)  {
-
+  footer section:first-child .row > div {
+    margin: 0;
+  }
 }
