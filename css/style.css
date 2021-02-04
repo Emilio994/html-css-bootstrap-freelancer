@@ -34,6 +34,13 @@ main section:nth-child(odd) {
 i {
   font-size: 2.2em;
 }
+.star span {
+  display: inline-block;
+  width: 10vw;
+  border-bottom: 3px solid;
+  margin: 8px 6px;
+  border-radius: 5px;
+}
 
 /* UTILITIES */
 ul li a {
@@ -51,8 +58,12 @@ ul li a:hover {
   margin-bottom: 3vh;
 }
 .slight_bottom {
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
 }
+.display_none {
+  display: none;
+}
+
 
 
 /* HEADER */
@@ -113,11 +124,32 @@ header .ms_jumbotron img {
 main section:first-child {
   padding: 3vh;
 }
-main section:first-child .container:last-child .square img {
+main section:first-child .container:last-child .square {
+  position: relative;
+  margin: 3% 0;
+}
+main section:first-child .container:last-child img {
   height: auto;
-  padding: 3%;
   max-width: 100%;
   border-radius: 30px;
+}
+.square:hover .layover {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgba(26, 188, 156, 0.9);
+}
+.square:hover .glyphicon-plus {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6em;
+  font-weight: lighter;
 }
 
 /* SECTION 2 */
@@ -132,6 +164,7 @@ main section:nth-child(2) p {
 main section:nth-child(2) i:not(.fa-star) {
   font-size: 1.1em;
 }
+
 /* SECTION 3 */
 main section:nth-child(3) {
   padding: 8vh
@@ -175,7 +208,7 @@ footer section:first-child .socials div {
   border-radius: 50%;
   margin: 0 4px;
 }
-footer   i { /* Facilita il click sulle icone */
+footer i { /* Facilita il click sulle icone */
   padding: 5px;
   font-size: 1.1em;
 }
@@ -195,10 +228,6 @@ footer section:nth-child(2) {
   }
   .ms_container {
     width: 100%;
-  }
-  .wrapper {
-    width: 50%;
-    margin: 0 auto;
   }
 
   /* HEADER */
@@ -231,6 +260,11 @@ footer section:nth-child(2) {
   /* COMMON */
   body {
     font-size: 1.4em;
+  }
+
+  .wrapper {
+    width: 50%;
+    margin: 0 auto;
   }
   /* HEADER */
   /* Navigator */
