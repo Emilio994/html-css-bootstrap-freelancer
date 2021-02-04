@@ -16,10 +16,10 @@
       <div class="ms_navigator">
         <div class="container">
           <div class="row navigator">
-            <div class="col-md-4 col-sm-4 col-xs-6">
+            <div class="col-md-6 col-sm-6 col-xs-6">
               <h4 class="text-left">START BOOTSTRAP</h4>
             </div>
-            <div class="col-md-offset-2 col-md-6 col-sm-6 col-sm-offset-2 col-xs-6 text-right">
+            <div class="col-md-6 col-sm-6 col-xs-6 text-right">
               <i class="fas fa-bars visible-xs-inline"></i>
               <ul class="visible-sm-inline visible-md-inline visible-lg-inline">
                 <li><a href="#">PORTFOLIO</a></li>
@@ -36,7 +36,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-              <img src="" alt="Test">
+              <img src="img/avataaars.svg" alt="Test">
               <h2>START BOOSTRAP</h2>
               <i class="fas fa-star"></i>
               <ul>
@@ -67,33 +67,33 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="square" id="red">
-                <img src="" alt="Test">
+              <div class="square">
+                <img src="img/cabin.png" alt="Cabin">
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="square" id="lightblue">
-                <img src="" alt="Test">
+              <div class="square">
+                <img src="img/cake.png" alt="Cake">
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="square" id="black">
-                <img src="" alt="Test">
+              <div class="square">
+                <img src="img/circus.png" alt="Circus">
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="square" id="darkblue">
-                <img src="" alt="Test">
+              <div class="square">
+                <img src="img/game.png" alt="Game">
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="square" id="blue">
-                <img src="" alt="Test">
+              <div class="square">
+                <img src="img/safe.png" alt="Safe">
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="square" id="brown">
-                <img src="" alt="Test">
+              <div class="square">
+                <img src="img/submarine.png" alt="Submarine">
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
               </div>
               <div class="col-md-12 col-sm-12 col-xs-12">
-                <button type="button" name="button"><i class="fas fa-download"></i> Download</button>
+                <button class="ms_button" type="button" name="button"><i class="fas fa-download"></i> Download</button>
               </div>
             </div>
           </div>
@@ -134,24 +134,26 @@
                 <i class="fas fa-star not_me"></i>
               </div>
                 <!-- Inizio  Form -->
-              <div class="col-md-12 col-sm-12 col-xs-12 text-left">
-                <span>Name</span>
-                <hr>
-              </div>
-              <div class="col-md-12 col-sm-12 col-xs-12 text-left">
-                <span>Email Address</span>
-                <hr>
-              </div>
-              <div class="col-md-12 col-sm-12 col-xs-12 text-left">
-                <span>Phone Number</span>
-                <hr>
-              </div>
-              <div class="col-md-12 col-sm-12 col-xs-12 text-left">
-                <span class="lifter">Message</span>
-                <hr>
-              </div>
-              <div class="col-md-12 col-sm-12 col-xs-12 text-left">
-                <button type="button" name="button">Send</button>
+              <div class="ms_form_wrapper">
+                <form class="text-left">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1"><!-- Name --></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1"><!-- Name --></label>
+                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1"><!-- Name --></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Phone Number">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1"><!-- Name --></label>
+                    <textarea class="form-control" id="exampleInputEmail1" placeholder="Message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-default ms_button">Send</button>
+                </form>
               </div>
             </div>
           </div>

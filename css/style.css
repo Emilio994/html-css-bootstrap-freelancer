@@ -1,5 +1,5 @@
 /* Debug */
-[class*=col-] {
+/* [class*=col-] {
   border: 1px solid blue;
 }
 .container-fluid {
@@ -7,7 +7,7 @@
 }
 .container {
   border: 1px solid black;
-}
+} */
 
 /* COMMON */
 * {
@@ -29,7 +29,7 @@ main section:nth-child(odd) {
   width: 50%;
   margin: 0 auto;
 }
-button {
+.ms_button {
   padding: 10px;
   background-color: #1ABC9C;
   color: white;
@@ -37,7 +37,7 @@ button {
   border-radius: 5px;
 }
 i {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 /* UTILITIES */
@@ -83,6 +83,10 @@ header .navigator ul {
 /* Jumbotron */
 header .ms_jumbotron {
   background-color: #1ABC9C;
+  line-height: 5vh;
+}
+header .ms_jumbotron img {
+  height: 300px;
 }
 header .ms_jumbotron i {
   margin-bottom: 2vh;
@@ -91,30 +95,13 @@ header .ms_jumbotron i {
 /* MAIN */
 /* SECTION 1 */
 main section:first-child .container:last-child .square {
-  height: 300px;
-  width: 60%;
-  margin: 5% auto;
-  border: 1px solid black;
-  border-radius: 10px;
+  margin: 3vh 0;
 }
-
-.square#red {
-  background-color: #BA4B63;
-}
-.square#lightblue {
-  background-color: #1EA4B6;
-}
-.square#black {
-  background-color: black;
-}
-.square#darkblue {
-  background-color: #1C83C1;
-}
-.square#blue {
-  background-color: #0E38B5;
-}
-.square#brown {
-  background-color: #CCB2A3;
+main section:first-child .container:last-child .square img {
+  height: auto;
+  padding: 3%;
+  max-width: 100%;
+  border-radius: 30px;
 }
 
 /* SECTION 2 */
@@ -136,7 +123,7 @@ main section:nth-child(3) {
 main section:nth-child(3) i {
   margin-bottom: 2vh;
 }
-main section:nth-child(3) .container .lifter {
+main section:nth-child(3) .container-fluid .lifter {
   min-height: 100px;
   display: inline-block;
 }
@@ -165,26 +152,17 @@ footer .socials i { /* Facilita il click sulle icone */
 /* SECTION 2 */
 footer section:nth-child(2) {
   background-color: #2C3E50;
+  padding: 1vh 0;
 }
 
 
 /* INIZIO MQ */
 /* TABLET MQ (col-sm-n) */
 @media (min-width:768px) and (max-width:992px) {
-  /* MAIN */
-  /* SECTION 1 */
-  main section:first-child .container:last-child .square {
-    height: 250px;
-    width: 90%;
-  }
+
 }
 
 /* SMARTPHONE MQ (col-md-n) */
 @media (min-width:992px)  {
-  /* MAIN */
-  /* SECTION 1 */
-  main section:first-child .container:last-child .square {
-    height: 250px;
-    width: 100%;
-  }
+
 }
