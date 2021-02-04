@@ -18,16 +18,13 @@
 body {
   color: white;
   text-align: center;
+  font-size: 1em;
 }
 main section:nth-child(odd) {
   color: #2C3E50;
 }
 .ms_footer_section {
   width: 100%;
-}
-.wrapper {
-  width: 50%;
-  margin: 0 auto;
 }
 .ms_button {
   background-color: #1ABC9C;
@@ -39,12 +36,6 @@ i {
 }
 
 /* UTILITIES */
-ul {
-  list-style: none;
-}
-ul li {
-  display: inline-block;
-}
 ul li a {
   color: white;
 }
@@ -59,10 +50,8 @@ ul li a:hover {
   font-size: 3em;
   margin-bottom: 3vh;
 }
-.clearifx {
-  content: "";
-  display: table;
-  clear: both;
+.slight_bottom {
+  margin-bottom: 3vh;
 }
 
 
@@ -77,13 +66,13 @@ header .ms_navigator {
   top: 0;
   z-index: 999;
 }
-header .ms_navigator [class*="col-"] h4 {
+header .ms_navigator [class*="col-"] h3 {
   line-height: 80px;
   margin: 0;
   font-size: 1.5em;
 }
 header .ms_navigator [class*="col"] ul li {
-  padding: 0 1%;
+  padding: 0 3%;
   font-size: 1.1em;
 }
 header .ms_navigator button {
@@ -110,23 +99,19 @@ header .ms_jumbotron .row {
   margin: 5vh 0;
 }
 header .ms_jumbotron h2 {
-  font-size: 5em;
+  font-size: 4em;
 }
 header .ms_jumbotron ul {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 header .ms_jumbotron img {
-  height: auto;
   width: 250px;
-}
-header .ms_jumbotron i {
-  margin-bottom: 2vh;
 }
 
 /* MAIN */
 /* SECTION 1 */
-main section:first-child .container:last-child .square {
-  margin: 3vh 0;
+main section:first-child {
+  padding: 3vh;
 }
 main section:first-child .container:last-child .square img {
   height: auto;
@@ -138,40 +123,31 @@ main section:first-child .container:last-child .square img {
 /* SECTION 2 */
 main section:nth-child(2) {
   background-color: #1ABC9C;
-  margin: 2vh auto;
-  padding: 8vh 0;
+  padding: 8vh
 }
 main section:nth-child(2) p {
-  margin: 3vh;
+  margin: 5vh 0;
   font-size: 1.5em;
-}
-main section:nth-child(2) button {
-  margin: 2vh 0;
 }
 main section:nth-child(2) i:not(.fa-star) {
   font-size: 1.1em;
 }
 /* SECTION 3 */
 main section:nth-child(3) {
-  margin-bottom: 3vh;
-  height: 700px;
-  padding: 8vh 0;
+  padding: 8vh
 }
 main section:nth-child(3) form .ms_input {
   border: none;
   box-shadow: none;
   border-bottom: 1px solid grey;
   border-radius: 0px;
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 main section:nth-child(3) form input {
   padding-bottom: 5px;
 }
 main section:nth-child(3) form .lifter {
   padding-bottom: 100px;
-}
-main section:nth-child(3) i {
-  margin-bottom: 2vh;
 }
 main section:nth-child(3) .container-fluid .lifter {
   min-height: 100px;
@@ -182,19 +158,19 @@ main section:nth-child(3) .container-fluid .lifter {
 /* SECTION 1 */
 footer section:first-child {
   background-color: #2c3e50;
-  padding: 7vh 0;
+  padding: 7vh
 }
 footer section:first-child  span {
   color: #1BB699;
 }
 footer section:first-child .row > div {
-  margin: 2vh 0;;
+  margin: 2vh 0;
 }
 footer section:first-child .socials div {
   text-align: center;
   height: 40px;
   width: 40px;
-  border: 1px solid white;
+  border: 2px solid white;
   line-height: 40px;
   border-radius: 50%;
   margin: 0 4px;
@@ -206,7 +182,6 @@ footer   i { /* Facilita il click sulle icone */
 /* SECTION 2 */
 footer section:nth-child(2) {
   background-color: #1a252f;
-  padding: 1vh 0;
 }
 
 
@@ -216,10 +191,14 @@ footer section:nth-child(2) {
 
   /* COMMON */
   body {
-    font-size: 0.8em;
+    font-size: 1.3em;
   }
   .ms_container {
     width: 100%;
+  }
+  .wrapper {
+    width: 50%;
+    margin: 0 auto;
   }
 
   /* HEADER */
@@ -237,21 +216,42 @@ footer section:nth-child(2) {
 
   /* MAIN */
   /* Section 1 */
-
   /* Section2 */
-
-
   /* Section 3 */
 
 
   /* FOOTER */
   /* Section 1 */
+  /* Section 2 */
 
 }
 
 /* SMARTPHONE MQ (col-md-n) */
 @media (min-width:992px)  {
+  /* COMMON */
+  body {
+    font-size: 1.4em;
+  }
+  /* HEADER */
+  /* Navigator */
+  /* Jumbotron */
+  header .ms_jumbotron h2 {
+    font-size: 5em;
+  }
+  header .ms_jumbotron ul {
+    font-size: 1.8em;
+  }
+
+  /* MAIN */
+  /* Section 1 */
+  /* Section2 */
+  /* Section 3 */
+
+  /* FOOTER */
+  /* Section 1 */
   footer section:first-child .row > div {
     margin: 0;
   }
+
+    /* Section 2 */
 }
