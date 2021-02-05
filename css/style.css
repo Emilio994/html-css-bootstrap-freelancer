@@ -35,7 +35,7 @@ main section:nth-child(odd) {
 i {
   font-size: 2.2em;
 }
-.star span {
+.ms_star span {
   display: inline-block;
   width: 10vw;
   border-bottom: 3px solid;
@@ -130,7 +130,7 @@ header .ms_jumbotron img {
 /* MAIN */
 /* SECTION 1 */
 main section:first-child {
-  padding: 3vh;
+  padding: 3vh 0;
 }
 main section:first-child .container:last-child .square {
   position: relative;
@@ -163,7 +163,7 @@ main section:first-child .container:last-child img {
 /* SECTION 2 */
 main section:nth-child(2) {
   background-color: #1ABC9C;
-  padding: 8vh
+  padding: 8vh 0;
 }
 main section:nth-child(2) p {
   margin: 5vh 0;
