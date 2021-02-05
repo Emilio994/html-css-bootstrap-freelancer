@@ -134,19 +134,21 @@ main section:first-child {
 }
 main section:first-child .container:last-child .square {
   position: relative;
-  margin: 3% 0;
+  margin: 3% auto;
+  max-width: 75%;
+  border-radius: 30px;
+  overflow: hidden;
 }
 main section:first-child .container:last-child img {
   height: auto;
-  max-width: 100%;
-  border-radius: 30px;
+  width: 100%;
 }
 .square:hover .layover {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+
   background-color: rgba(26, 188, 156, 0.6);
 }
 .square:hover .glyphicon-plus {
@@ -257,6 +259,12 @@ footer section:nth-child(2) {
 
   /* MAIN */
   /* Section 1 */
+  main section:first-child .container:last-child .square {
+    max-width: 100%;
+  }
+  main section:first-child .container:last-child img {
+    width: 100%;
+  }
   /* Section2 */
   /* Section 3 */
 
@@ -289,6 +297,12 @@ footer section:nth-child(2) {
 
   /* MAIN */
   /* Section 1 */
+  main section:first-child .container:last-child .square {
+    max-width: 100%;
+  }
+  main section:first-child .container:last-child img {
+    width: 100%;
+  }
   /* Section2 */
   /* Section 3 */
 
