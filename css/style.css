@@ -124,7 +124,7 @@ header .ms_jumbotron ul {
   font-size: 1.5em;
 }
 header .ms_jumbotron img {
-  width: 250px;
+  max-width: 250px;
 }
 
 /* MAIN */
@@ -136,7 +136,7 @@ main section:first-child .container:last-child .square {
   position: relative;
   margin: 3% auto;
   max-width: 75%;
-  border-radius: 30px;
+  border-radius: 1em;
   overflow: hidden;
 }
 main section:first-child .container:last-child img {
@@ -223,7 +223,7 @@ footer section:first-child .socials div {
   border: 2px solid white;
   line-height: 40px;
   border-radius: 50%;
-  margin: 0 4px;
+  margin: 0 3px;
 }
 footer i { /* Facilita il click sulle icone */
   padding: 5px;
