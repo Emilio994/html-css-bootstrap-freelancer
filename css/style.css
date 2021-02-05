@@ -5,6 +5,9 @@
 .container-fluid {
   border: 1px solid red;
 }
+.row {
+border: 1px solid green;
+}
 .container {
   border: 1px solid black;
 } */
@@ -22,9 +25,6 @@ body {
 }
 main section:nth-child(odd) {
   color: #2C3E50;
-}
-.ms_footer_section {
-  width: 100%;
 }
 .ms_button {
   background-color: #1ABC9C;
@@ -147,7 +147,7 @@ main section:first-child .container:last-child img {
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  background-color: rgba(26, 188, 156, 0.9);
+  background-color: rgba(26, 188, 156, 0.6);
 }
 .square:hover .glyphicon-plus {
   display: block;
@@ -203,7 +203,7 @@ main section:nth-child(3) .container-fluid .lifter {
 /* SECTION 1 */
 footer section:first-child {
   background-color: #2c3e50;
-  padding: 7vh
+  padding: 7vh 0;
 }
 footer section:first-child  span {
   color: #1BB699;
@@ -273,7 +273,6 @@ footer section:nth-child(2) {
   body {
     font-size: 1.4em;
   }
-
   .wrapper {
     width: 50%;
     margin: 0 auto;
