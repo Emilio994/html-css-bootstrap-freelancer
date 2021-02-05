@@ -29,7 +29,7 @@ main section:nth-child(odd) {
 .ms_button {
   background-color: #1ABC9C;
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
   padding: 5px 10px;
 }
 i {
@@ -130,7 +130,7 @@ header .ms_jumbotron img {
 /* MAIN */
 /* SECTION 1 */
 main section:first-child {
-  padding: 3vh 0;
+  padding: 4% 0;
 }
 main section:first-child .container:last-child .square {
   position: relative;
@@ -165,11 +165,14 @@ main section:first-child .container:last-child img {
 /* SECTION 2 */
 main section:nth-child(2) {
   background-color: #1ABC9C;
-  padding: 8vh 0;
+  padding: 4% 0;
 }
 main section:nth-child(2) p {
-  margin: 5vh 0;
   font-size: 1.5em;
+  margin: 2vh 0;
+}
+main section:nth-child(2) button {
+  margin: 2vh 0;
 }
 main section:nth-child(2) i:not(.fa-star) {
   font-size: 1.1em;
@@ -177,7 +180,7 @@ main section:nth-child(2) i:not(.fa-star) {
 
 /* SECTION 3 */
 main section:nth-child(3) {
-  padding: 8vh
+  padding: 4%;
 }
 main section:nth-child(3) form .ms_input {
   border: none;
@@ -205,7 +208,7 @@ main section:nth-child(3) .container-fluid .lifter {
 /* SECTION 1 */
 footer section:first-child {
   background-color: #2c3e50;
-  padding: 7vh 0;
+  padding: 4% 0;
 }
 footer section:first-child  span {
   color: #1BB699;
