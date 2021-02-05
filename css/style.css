@@ -216,18 +216,17 @@ footer section:first-child  span {
 footer section:first-child .row > div {
   margin: 2vh 0;
 }
-footer section:first-child .socials div {
+footer section:first-child .socials div i {
   text-align: center;
-  height: 40px;
-  width: 40px;
+  width: 50px;
+  height: 50px;
   border: 2px solid white;
-  line-height: 40px;
   border-radius: 50%;
   margin: 0 3px;
 }
 footer i { /* Facilita il click sulle icone */
-  padding: 5px;
-  font-size: 1.1em;
+  padding: 13.33px;
+  font-size: 20px;
 }
 /* SECTION 2 */
 footer section:nth-child(2) {
